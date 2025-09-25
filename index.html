@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imtiaz Super Market</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Top Red  -->
+<div class="top-strip text-center sticky-top">
+  Standard orders will be delivered the next day - All orders will be delivered between 10am to 7pm only
+</div>
+
+<!-- Navbar  -->
+<nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+  <div class="container-fluid flex-column">
+
+  
+    <div class="d-flex w-100 align-items-center justify-content-between flex-wrap">
+     
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fblinkximtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Flogo%2F1656401353.png&w=1920&q=90" alt="Imtiaz Logo" class="logo">
+      </a>
+
+      <!-- Delivery Dropdown -->
+      <div class="dropdown ms-2">
+        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Delivery
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Karachi</a></li>
+          <li><a class="dropdown-item" href="#">Lahore</a></li>
+          <li><a class="dropdown-item" href="#">Islamabad</a></li>
+          <li><a class="dropdown-item" href="#">Hyderabad</a></li>
+        </ul>
+      </div>
+
+      <form class="d-flex mx-auto search-form flex-grow-1 px-2 my-2 my-lg-0">
+        <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+        <button class="btn btn-warning" type="submit">Search</button>
+      </form>
+
+      <div class="d-flex align-items-center flex-wrap">
+        <a href="#" class="nav-link me-3">Home</a>
+        <button class="btn btn-outline-dark me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas">
+          🛒 Cart
+        </button>
+        <a href="#" class="btn btn-warning">Login</a>
+      </div>
+    </div>
+
+    <div class="container-fluid second-row d-flex align-items-center justify-content-between flex-wrap mt-2">
+      <div class="d-flex align-items-center mb-2 mb-lg-0">
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Fruits & Vegetables</a></li>
+            <li><a class="dropdown-item" href="#">Bakery & Dairy</a></li>
+            <li><a class="dropdown-item" href="#">Beverages</a></li>
+            <li><a class="dropdown-item" href="#">Meat & Seafood</a></li>
+            <li><a class="dropdown-item" href="#">Snacks</a></li>
+            <li><a class="dropdown-item" href="#">Personal Care</a></li>
+            <li><a class="dropdown-item" href="#">Household</a></li>
+          </ul>
+        </div>
+        <span class="welcome-text ms-3">Welcome to Imtiaz</span>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info d-flex flex-wrap">
+        <span class="me-4 text-dark">📞 021-111-468-429</span>
+        <span class="text-dark">✉️ support@imtiaz.com</span>
+      </div>
+    </div>
+  </div>
+</nav>
+   \
+<!-- Offcanvas for Cart -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Your Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>No items in cart yet.</p>
+      </div>
+    </div>
+    
+<section id="shop-by-category" class="py-4">
+  <div class="container">
+    <div class="section-heading text-center mb-4">
+  <span>Shop by Category</span>
+</div>
+
+    <div class="category-row">
+      <div class="category-card text-center">
+        <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fmenu_image%2F1669183264.jpg&w=1920&q=90" alt="snacks & confectionery" class="cat-img">
+        <p class="cat-name">snacks & confectionery</p>
+      </div>
+
+      <div class="category-card text-center">
+        <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fmenu_image%2F1669183328.jpg&w=1920&q=90" alt="beverages" class="cat-img">
+        <p class="cat-name">beverages</p>
+      </div>
+
+      <div class="category-card text-center">
+        <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fmenu_image%2F1669183415.jpg&w=1920&q=90" alt="Tea & coffee" class="cat-img">
+        <p class="cat-name">Tea & coffee</p>
+      </div>
+
+      <div class="category-card text-center">
+        <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fmenu_image%2F1669183956.jpg&w=1920&q=90" alt="edible grocery" class="cat-img">
+        <p class="cat-name">edible grocery</p>
+      </div>
+
+      <div class="category-card text-center">
+        <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fmenu_image%2F1669183918.jpg&w=1920&q=90" alt="Diary" class="cat-img">
+        <p class="cat-name">Diary</p>
+      </div>
+
+      <div class="category-card text-center">
+        <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fmenu_image%2F1669183859.jpg&w=1920&q=90" alt="baby world" class="cat-img">
+        <p class="cat-name">baby world</p>
+      </div>
+
+      <div class="category-card text-center">
+        <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fmenu_image%2F1674024211.jpg&w=1920&q=90" alt="Household" class="cat-img">
+        <p class="cat-name">Household</p>
+      </div>
+
+      <div class="category-card text-center">
+        <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fmenu_image%2F1669184014.jpg&w=1920&q=90" alt="health & personal care" class="cat-img">
+        <p class="cat-name">health & personal care</p>
+      </div>
+
+      <div class="category-card text-center">
+        <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fmenu_image%2F1669184089.jpg&w=1920&q=90" alt="pet essential" class="cat-img">
+        <p class="cat-name">pet essential</p>
+      </div>
+
+      <div class="category-card text-center">
+        <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fmenu_image%2F1669184110.jpg&w=1920&q=90" alt="pharmacy" class="cat-img">
+        <p class="cat-name">pharmacy</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Confectionary Section -->
+<section id="confectionary" class="py-4">
+  <div class="container-fluid">
+
+    <div class="section-heading text-center mb-4">
+      <span>Confectionary</span>
+    </div>
+
+
+    <div class="mb-4">
+      <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fsplash%2F1671107946.png&w=1920&q=90" 
+           alt="Confectionary Banner" class="img-fluid w-100 rounded">
+    </div>
+    <div class="row g-2 justify-content-center">
+     
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fgallery%2FCON170001171.jpg&w=1920&q=90" alt="Product" class="product-img">
+          <h6 class="product-name">Coconut Biscuits</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 299</span>
+            <button class="btn btn-sm btn-warning">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fgallery%2FCON170000121.jpg&w=1920&q=90" alt="Product" class="product-img">
+          <h6 class="product-name">Super Crispy Chips</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 150</span>
+            <button class="btn btn-sm btn-warning">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fgallery%2FCON170000546.jpg&w=1920&q=90" alt="Product" class="product-img">
+          <h6 class="product-name">Super Crispy Peanut</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 50</span>
+            <button class="btn btn-sm btn-warning">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fgallery%2FCON170001602.jpg&w=1920&q=90" alt="Product" class="product-img">
+          <h6 class="product-name">Shahi Nimco Dalmot</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 100</span>
+            <button class="btn btn-sm btn-warning">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fgallery%2FCON170000546.jpg&w=1920&q=90" alt="Product" class="product-img">
+          <h6 class="product-name">Waffers</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 250</span>
+            <button class="btn btn-sm btn-warning">🛒</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Edible Grocery Section -->
+<section id="edible-grocery" class="py-4">
+  <div class="container-fluid">
+
+    <div class="section-heading text-center mb-4">
+      <span>Edible Grocery</span>
+    </div>
+    <div class="mb-4">
+      <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fsplash%2F1670937361.jpg&w=1920&q=90"
+           alt="Edible Grocery Banner" class="img-fluid w-100 rounded">
+    </div>
+
+    <div class="row g-3 justify-content-center">
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://i0.wp.com/apnidukan.xyz/wp-content/uploads/2024/05/rice-supreme.jpg?fit=332%2C383&ssl=1" 
+               alt="Basmati Rice" class="product-img">
+          <h6 class="product-name">Basmati Rice</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 1,250</span>
+            <button class="btn btn-sm btn-warning">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://img.drz.lazcdn.com/static/pk/p/c447cbff2e95c242faa4f183f35cb5e8.jpg_720x720q80.jpg_.webp" 
+               alt="Wheat Atta" class="product-img">
+          <h6 class="product-name">Wheat Atta</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 2,300</span>
+            <button class="btn btn-sm btn-warning">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://img.drz.lazcdn.com/static/pk/p/730726feb96e05f842f8751ccdb874e7.jpg_720x720q80.jpg_.webp" 
+               alt="White Sugar" class="product-img">
+          <h6 class="product-name">White Sugar</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 220</span>
+            <button class="btn btn-sm btn-warning">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzvyd05PbogciDfOIyJq2YHfjvOl_trDgKAw&s" 
+               alt="Cooking Oil" class="product-img">
+          <h6 class="product-name">Cooking Oil</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 720</span>
+            <button class="btn btn-sm btn-warning">🛒</button>
+          </div>
+        </div>
+      </div>
+
+  
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLb_UyQfjh_oAaemvFri9YwsSblS8GRkqCuA&s" 
+               alt="Pulses" class="product-img">
+          <h6 class="product-name">Pulses</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 450</span>
+            <button class="btn btn-sm btn-warning">🛒</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Baby World Section -->
+<section id="baby-world" class="py-5">
+  <div class="container">
+    <h5 class="section-heading mb-4 text-center"><span>Baby World</span></h5>
+
+    <div class="mb-4">
+      <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fsplash%2F1671107960.png&w=1920&q=90" alt="Baby World Banner" class="img-fluid w-100 rounded">
+    </div>
+
+    <div class="row g-3">
+  
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fgallery%2FEDG190001700.jpg&w=1920&q=90" alt="Product 1" class="product-img">
+          <p class="product-name">cerelac</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 550</span>
+            <button class="btn btn-warning btn-sm">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFIy6_AR8ekdPX6r-CDVACAnWn6Z4qKr8x7g&s" alt="Product 2" class="product-img">
+          <p class="product-name">Baby Shampoo</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 780</span>
+            <button class="btn btn-warning btn-sm">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://www.shield.com.pk/cdn/shop/files/Regular_Wipes.jpg?v=1740566333" alt="Product 3" class="product-img">
+          <p class="product-name">Baby Wipes</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 320</span>
+            <button class="btn btn-warning btn-sm">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9EZUuCYtVNk_Xw5T7V7YGOmTsPCQ1kzpZAg&s" alt="Product 4" class="product-img">
+          <p class="product-name">Baby Powder</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 450</span>
+            <button class="btn btn-warning btn-sm">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSXh8qB3hUaO4AOjcDkD_-IOtpRqfpBDCqqA&s" alt="Product 5" class="product-img">
+          <p class="product-name">Baby Diapers</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 1200</span>
+            <button class="btn btn-warning btn-sm">🛒</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Home Care Section -->
+<section id="homecare" class="py-4">
+  <div class="container">
+
+  
+    <div class="section-heading text-center mb-4">
+      <span>Home Care</span>
+    </div>
+
+    <div class="mb-4">
+      <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fsplash%2F1671107973.png&w=1920&q=90" 
+           alt="Home Care Banner" class="img-fluid w-100">
+    </div>
+
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fimtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Fgallery%2FHME260002195.jpg&w=1920&q=90" 
+               alt="Detergent Powder" class="product-img">
+          <h6 class="product-name">Detergent Powder</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 450</span>
+            <button class="btn btn-sm btn-warning">🛒</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://springs.com.pk/cdn/shop/products/1_96f90f2f-81c3-4067-8ce0-fd712061880f.jpg?v=1747862863" 
+               alt="Dishwashing Liquid" class="product-img">
+          <h6 class="product-name">Dishwashing Liquid</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 220</span>
+            <button class="btn btn-sm btn-warning">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHiZAhlHawcnC0QJhuCNBAfMklpveBxaqr4A&s" 
+               alt="Toilet Cleaner" class="product-img">
+          <h6 class="product-name">Toilet Cleaner</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 180</span>
+            <button class="btn btn-sm btn-warning">🛒</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzCOdZnY0QNDJIQ4slFMHaEZazsCWAdzv3yA&s" 
+               alt="Floor Cleaner" class="product-img">
+          <h6 class="product-name">Floor Cleaner</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 300</span>
+            <button class="btn btn-sm btn-warning">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="product-card text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWwkf_Z2An6R-4IXtRxyDMAP6-mn6b7lov88Xsxo0nj5i93tq5Ck3_96gnsBr-b9cGHFU&usqp=CAU" 
+               alt="Glass Cleaner" class="product-img">
+          <h6 class="product-name">Glass Cleaner</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="product-price">Rs. 200</span>
+            <button class="btn btn-sm btn-warning">🛒</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Text Banner Section -->
+<section class="text-banner">
+  <div class="banner-container">
+    <p>
+      Imtiaz is the pioneer in the retail industry of Pakistan, providing an ultimate shopping experience to its consumers.
+    </p>
+  </div>
+</section>
+<!-- Footer Start -->
+<footer class="footer mt-5">
+  <div class="container">
+    <div class="row align-items-start">
+
+      <!--  Logo -->
+      <div class="col-md-3 mb-3">
+        <img src="https://shop.imtiaz.com.pk/_next/image?url=https%3A%2F%2Fblinkximtiaz-i.s3.ap-southeast-1.amazonaws.com%2F55126%2Flogo%2F1656401353.png&w=1920&q=90" 
+             alt="Imtiaz Logo" class="footer-logo">
+      </div>
+
+      <!--  Contact Info -->
+      <div class="col-md-6 mb-3">
+        <h6 class="footer-heading">Contact Us</h6>
+        <p class="mb-1">📞 Phone: 021-111468429</p>
+        <p class="mb-1">✉️ Email: hello@imtiaz.com.pk</p>
+        <p class="mb-1">📍 Address: Imtiaz - Global, Ponam warehouse : Sector 14, Korangi, Karachi</p>
+        <p class="mb-1">📞 UAN: 021-111-468-429 (IMT-IAZ)</p>
+        <div class="social-links mt-2">
+          <a href="#" class="me-3">🌐 Facebook</a>
+          <a href="#">📸 Instagram</a>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3 text-md-end text-start">
+        <h6 class="footer-heading">Quick Links</h6>
+        <p><a href="#" class="footer-link">Privacy Policy</a></p>
+        <p><a href="#" class="footer-link">Return and Exchange Policy</a></p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<!-- Footer End -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
